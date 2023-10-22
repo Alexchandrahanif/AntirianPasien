@@ -4,6 +4,10 @@
 
 - Install PostgreSQL (https://www.postgresql.org/download/)
 
+- Ubah Konfigurasi URL_DATABASE di file database.py sesuai konfigurasi dari postgreSQL anda (user, password, dan nama Database)
+
+- Buat Database sesuai nama yang anda buat, saat ini nama database nya (AntrianPasien)
+
 - pip install fastapi sqlalchemy uvicorn
 
 - jalankan diterminal "uvicorn main:app --reload"
