@@ -7,7 +7,7 @@ from datetime import datetime
 from database import engine
 from enum import Enum
 from typing import List
-from datetime import datetime, time, timedelta
+from datetime import datetime, time
 
 
 app = FastAPI()
@@ -131,6 +131,12 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+@app.get("/")
+def hallo():
+    return "Selamat Datang Di Technical Test Alex Chandra Hanif, silahkan buka http://127.0.0.1:8000/docs untuk melihat semua dokumentasi API"
+
 
 # CRUD Dokter
 
