@@ -94,8 +94,6 @@ class AntrianResponse(BaseModel):
     keluhan: str
     layanan_id: int
     pasien_id: int
-    dokter: DokterResponse
-    pasien: PasienResponse
 
 
 class ResponseModel(BaseModel):
